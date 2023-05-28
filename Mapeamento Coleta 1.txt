@@ -1,0 +1,44 @@
+'Rede Coleta 1a.gml' - gerada sem filtros.
+graph [
+comment "rede não direcionada bipartida de chaveTituloAno, anoWidat"
+directed 0
+
+node [ id {{jsonize(cells.chaveTituloAno.value)}}    variavel "chaveTitulo" ]
+node [ id {{jsonize(cells.anoWidat.value)}}          variavel "ano"         ]
+
+edge [ source {{jsonize(cells.chaveTituloAno.value)}} target {{jsonize(cells.anoWidat.value)}}] 
+]
+
+'Rede Coleta 1b.gml' - gerada a partir de filtro para eliminar células em branco de 'termo'
+graph [
+comment "rede não direcionada bipartida de chaveTituloAno e termo"
+directed 0
+
+node [ id {{jsonize(cells.chaveTituloAno.value)}}    variavel "chaveTitulo" ]
+node [ id {{jsonize(cells.termo.value)}}             variavel "termo"       ]
+
+edge [ source {{jsonize(cells.chaveTituloAno.value)}} target {{jsonize(cells.termo.value)}}] 
+]
+
+'Rede Coleta 1c.gml' - gerada a partir de filtro para eliminar células em branco de 'termoAdicionado1'
+graph [
+comment "rede não direcionada bipartida de chaveTituloAno e termoAdicionado1"
+directed 0
+
+node [ id {{jsonize(cells.chaveTituloAno.value)}}    variavel "chaveTitulo" ]
+node [ id {{jsonize(cells.termo.value)}}             variavel "termoAdicionado1"       ]
+
+edge [ source {{jsonize(cells.chaveTituloAno.value)}} target {{jsonize(cells.termoAdicionado1.value)}}] 
+]
+
+'Rede Coleta 1d.gml' - gerada a partir de filtro para eliminar células em branco de 'termoAdicionado2'
+graph [
+comment "rede não direcionada bipartida de chaveTituloAno e termoAdicionado2"
+directed 0
+
+node [ id {{jsonize(cells.chaveTituloAno.value)}}    variavel "chaveTitulo" ]
+node [ id {{jsonize(cells.termo.value)}}             variavel "termoAdicionado2"       ]
+
+edge [ source {{jsonize(cells.chaveTituloAno.value)}} target {{jsonize(cells.termoAdicionado2.value)}}] 
+]
+

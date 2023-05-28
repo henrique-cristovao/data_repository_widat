@@ -1,0 +1,14 @@
+'Rede Coleta 2.gml' - gerada sem filtros.
+graph [
+comment "rede não direcionada de 3-partida de chaveTituloAno, autorPseudo, instituicao"
+directed 0
+
+node [ id {{jsonize(cells.chaveTituloAno.value)}}    variavel "chaveTitulo" ]
+node [ id {{jsonize(cells.autorPseudo.value)}}       variavel "autorPseudo" ]
+node [ id {{jsonize(cells.instituicao.value)}}       variavel "instituição" ]
+
+edge [ source {{jsonize(cells.chaveTituloAno.value)}} target {{jsonize(cells.autorPseudo.value)}}] 
+edge [ source {{jsonize(cells.chaveTituloAno.value)}} target {{jsonize(cells.instituicao.value)}}] 
+]
+
+
